@@ -1,0 +1,692 @@
+body {
+	margin: 0;
+	padding: 0;
+	line-height: 1.5;
+	box-sizing: border-box;
+	color: #000;
+	font-family: 'comfortaa';
+}
+
+* {
+	outline: none !important;
+}
+
+a {
+	text-decoration: none;
+	color: #000;
+}
+
+button:active, button:hover, button:focus, input:active, input:hover, input:focus {
+	outline: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	color: #000;
+	font-size: 15pt;
+	font-weight: 400;
+	line-height: 1.5;
+	font-family: 'Marck Script';
+}
+
+p {
+	font-weight: 400;
+	font-size: 12pt;
+	line-height: 1.4;
+}
+
+ul li {
+	list-style-type: none;
+}
+
+.section-padding {
+	padding: 80px 0;
+}
+
+/* Header Section Start */
+#headear {
+	height: 100%;
+	background: url('../Image/headBg.jpg') center no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+}
+
+.nav-link {
+	color: #fff;
+	font-weight: 500;
+	font-size: 11pt
+}
+
+.active .nav-link, .nav-link:hover {
+	color: red;
+}
+
+.sociallink {
+	margin-left: 50px;
+}
+
+.sociallink li {
+	display: inline-block;
+}
+
+.sociallink li a {
+	color: #6d7080;
+	font-size: 14pt;
+	transition: .6s;
+}
+
+.sociallink li a:hover {
+	color: #fff
+}
+
+#bannerText {
+	margin: 0 auto;
+	text-align: center;
+	margin-top: 110px;
+}
+
+#bannerText h1 {
+	color: #fff;
+	font-size: 3em;
+	line-height: 2;
+}
+
+.divider {
+	margin-top: 0;
+	margin-bottom: 10px;
+}
+
+.banner-btn {
+	margin-top: 30px;
+	margin-bottom: 20px
+}
+
+.btn {
+	border: 0 !important;
+}
+
+.btn-banner {
+	color: #fff;
+	width: 200px;
+	padding: 15px;
+	margin-right: 30px;
+	text-transform: capitalize;
+	font-weight: 600;
+	word-spacing: 2px;
+	background: rgba(255, 238, 238, 0.22);
+	transition: all .6s ease-in;
+}
+
+.btn-banner:last-child {
+	margin-right: 0;
+}
+
+.banner-btn .active, .btn:hover {
+	background: #903221;
+	border: transparent;
+	color: #fff;
+}
+
+/* Responsive */
+@media(min-width:200px)and (max-width:575px) {
+	.container {
+		width: 100%;
+		padding: 0 0px;
+	}
+
+	#headear {
+		height: 100%;
+	}
+
+	.navbar-brand {
+		width: 60%;
+	}
+
+	.navbar-brand img {
+		width: 85%;
+	}
+
+	.navbar-toggler {
+		width: 0;
+		margin-left: 0px;
+		text-align: right;
+		color: #fff;
+	}
+
+	.navbar-toggler .fa-bars {
+		font-size: 15pt;
+	}
+
+	.sociallink {
+		margin-left: 0
+	}
+
+	.sociallink li {
+		padding: 0 7px;
+	}
+
+	#bannerText {
+		margin-top: 0px;
+	}
+
+	#bannerText h1 {
+		line-height: 1.3;
+	}
+
+	.btn-banner {
+		margin-right: 0;
+		margin-bottom: 10px;
+	}
+
+}
+
+@media(min-width:576px) and (max-width:767px) {
+	.container {
+		max-width: 565px;
+	}
+
+	.navbar-toggler {
+		color: #fff;
+		font-size: 19pt;
+	}
+
+	.sociallink {
+		margin-left: 0;
+	}
+
+	.sociallink li {
+		margin: 0 8px
+	}
+
+	.sociallink li:first-child {
+		margin-left: 0;
+	}
+
+}
+
+@media(min-width:768px) and (max-width:991px) {
+	#headear {
+		height: 100%
+	}
+
+	#bannerText {
+		margin-top: 30px
+	}
+
+	.banner-btn {
+		margin-bottom: 20px;
+	}
+
+	.navbar-toggler {
+		color: #fff;
+		font-size: 19pt;
+	}
+
+	.sociallink {
+		margin-left: 0;
+	}
+
+	.sociallink li {
+		margin: 0 8px
+	}
+
+	.sociallink li:first-child {
+		margin-left: 0;
+	}
+
+}
+
+/* Heading End */
+
+/* Our story start */
+#story {
+	background: url('../Image/ourstoryBg.jpg') center no-repeat;
+	background-size: cover;
+	background-attachment: scroll;
+}
+
+.title {
+	text-align: center;	/*! margin-bottom: 30px; */
+}
+
+.title h3 {
+	color: #fa8872;
+	font-size: 30pt;
+	font-weight: 600;
+}
+
+.story-box {
+	margin: 0 auto;
+	text-align: center;
+}
+
+.story-text {
+	color: #848484;
+	margin-bottom: 30px;
+}
+
+.storyImage img {
+	width: 35%
+}
+
+/* Responsive */
+@media(min-width:200px)and (max-width:575px) {
+	.section-padding {
+		padding: 40px 0;
+	}
+
+	.title h3 {
+		font-size: 20pt;
+	}
+
+	.story-box .carousel-item .story-text p {
+		font-size: 10pt;
+		line-height: 2;
+		padding: 0 18px
+	}
+
+	.story-box .carousel-item .storyImage img {
+		width: 30%;
+		margin: auto;
+	}
+
+}
+
+@media(min-width:576px)and (max-width:767px) {
+	.story-box .carousel-item .story-text p {
+		line-height: 1.8;
+		font-size: 10pt;
+	}
+
+	.section-padding {
+		padding: 40px 0
+	}
+
+}
+
+@media(min-width:768px)and (max-width:991px) {
+	.story-box .carousel-item .story-text p {
+		line-height: 1.8;
+		font-size: 10pt;
+	}
+
+	.storyImage img {
+		width: 25%
+	}
+
+}
+
+/* Story section end */
+
+/* Ingredients Section Start */
+#ingredients {
+	min-height: 500px;
+}
+
+.ingredientsText {
+	text-align: center;
+	background: #fb7459;
+	height: 100%;
+	padding: 80px;
+	color: #fff;
+}
+
+.ingredientsText .title h3 {
+	color: #fff
+}
+
+.ingredientsText p {
+	font-size: 10pt;
+	line-height: 2;
+	margin-bottom: 30px;
+	font-style: italic;
+}
+
+.ingredientsText .ingredientsItem img {
+	margin-right: 10px;
+	width: 20%
+}
+
+.ingredientsImag {
+	padding: 80px 0;
+}
+
+.ingredientsImag img {
+	width: 90%;
+}
+
+/* Responsive */
+@media(min-width:200px) and (max-width:575px) {
+	.section-padding {
+		padding: 40px 0;
+	}
+
+	.ingredientsText {
+		padding: 20px;
+	}
+
+}
+
+@media(min-width:576px) and (max-width:767px) {
+	.section-padding {
+		padding: 40px 0;
+	}
+
+	.ingredientsText {
+		padding: 30px;
+	}
+
+}
+
+@media(min-width:768px) and (max-width:991px) {
+	.section-padding {
+		padding: 40px 0;
+	}
+
+	.ingredientsText {
+		padding: 43px;
+	}
+
+}
+
+/* Ingredients Section End */
+
+/* Menu section start */
+#menu {
+	background: url('../Image/dishBg.jpg') center no-repeat;
+	background-size: cover;
+}
+
+#menu .section-padding {
+	padding-bottom: 30px;
+}
+
+.menu-box {
+	color: #fff;
+	margin-bottom: 20px;
+}
+
+.menu-item-detail .dishNamePrice {
+	display: flex;
+	justify-content: space-between
+}
+
+.menu-item-detail {
+	padding: 10px 0;
+	border-bottom: 1px solid #FA88726B;
+}
+
+.dishNamePrice h4 {
+	color: #ffff;
+	font-size: 23px;
+	font-family: comfortaa;
+	font-weight: 600;
+}
+
+.dishNamePrice p {
+	font-weight: 600;
+	font-size: 21px;
+	font-style: italic;
+	color: #ffe618;
+}
+
+.shortdetail {
+	font-size: 8pt;
+	font-family: cursive;
+	text-transform: capitalize;
+}
+
+/* Responsive */
+@media(min-width:200px) and (max-width:575px) {
+	#menu {
+		height: 100%;
+	}
+
+	#menu .section-padding {
+		padding: 30px 15px;
+	}
+
+	.dishNamePrice h4 {
+		font-size: 12pt
+	}
+
+	.dishNamePrice p {
+		font-size: 11pt;
+		color: #ffe618;
+		font-weight: 800 !important;
+	}
+
+}
+
+/* Menu section End */
+
+/* Review Section start */
+.review-sectionImage {
+	text-align: center;
+}
+
+#reviewSlide .carousel-item {
+	padding: 0 100px;
+	text-align: center;
+}
+
+.review-text p {
+	position: relative;
+	color: rgba(0, 0, 0, .6);
+	font-size: 15px;
+	font-weight: 600;
+	line-height: 1.7;
+	font-style: italic;
+	z-index: 550;
+	margin-top: 20px;
+}
+
+.star ul li {
+	list-style: none;
+	display: inline-block;
+	padding: 8px 10px;
+	color: #fac917;
+	font-size: 21px;
+}
+
+.name {
+	font-family: 'Marck Script';
+	font-weight: 600;
+	font-size: 30px;
+}
+
+/* Responsive */
+@media(min-width:200px) and (max-width:575px) {
+	#review #reviewSlide p {
+		font-size: 10pt;
+		margin-top: 20px;
+	}
+
+	#reviewSlide ul li {
+		font-size: 10pt;
+	}
+
+	#reviewSlide .name {
+		font-size: 20pt;
+	}
+
+	#reviewSlide .carousel-item {
+		padding: 0 15px;
+	}
+
+}
+
+@media(min-width:576px) and (max-width:767px) {
+	#reviewSlide .carousel-item {
+		padding: 0 15px;
+	}
+
+	#review #reviewSlide p {
+		font-size: 10pt;
+		margin-top: 20px;
+	}
+
+	#reviewSlide ul li {
+		font-size: 10pt;
+	}
+
+	#reviewSlide .name {
+		font-size: 20pt;
+	}
+
+}
+
+@media(min-width:768px) and (max-width:991px) {
+	#reviewSlide .carousel-item {
+		padding: 0 15px;
+	}
+
+	#review #reviewSlide p {
+		font-size: 10pt;
+		margin-top: 20px;
+	}
+
+	#reviewSlide ul li {
+		font-size: 10pt;
+	}
+
+	#reviewSlide .name {
+		font-size: 20pt;
+	}
+
+}
+
+/* Review section End */
+
+/* Booking section start */
+#bookingTable {
+	background: url('../Image/BookTableBg.jpg') center no-repeat;
+	background-size: cover;
+}
+
+#bookingTable .booktableIamge {
+	padding: 15px 0;
+	width: 95%;
+}
+
+#bookingTable .title p {
+	margin-top: 25px;
+	margin-bottom: 20px;
+}
+
+.form-control:focus {
+	border-color: red;
+	box-shadow: none;
+	outline: none !important;
+}
+
+.btn-submit {
+	margin: 15px auto;
+	border: 1px solid red;
+	background: #fb5535;
+	width: 200px;
+	text-align: center;
+	color: #fff;
+	display: block;
+}
+
+/* Responsive */
+@media(min-width:200px) and (max-width:575px) {
+	#bookingTable {
+		padding: 0 15px
+	}
+
+	.btn-submit {
+		text-align: center;
+		display: block;
+	}
+
+}
+
+/* Booking section end */
+
+/*  footer start */
+#footer {
+	background: url('../Image/footerBg.jpg') center no-repeat;
+	background-size: cover;
+}
+
+#footer .section-padding {
+	padding: 40px 0;
+}
+
+.phone, .address {
+	padding: 30px;
+	text-align: center;
+}
+
+.icon {
+	color: #ffff;
+	font-size: 20px;
+	margin-bottom: 15px;
+}
+
+.phone p, .address p {
+	line-height: 1;
+	font-weight: 600;
+	font-size: 16px;
+	color: #858488;
+}
+
+.footerLogocol {
+	padding: 30px;
+	text-align: center;
+}
+
+.footerlogo img {
+	width: 50%
+}
+
+.footerLogocol .social-site li {
+	display: inline-block;
+	padding: 8px 7px;
+	margin-right: 12px;
+	width: 30px;
+	height: 30px;
+	line-height: .5;
+	color: #616265;
+	background: #000;
+	margin-top: 17px;
+	border-radius: 30px;
+	transition: all .6s ease-in;
+}
+
+.footerLogocol .social-site li:hover {
+	color: #fff;
+	background: #fb5535;
+}
+
+.footerLogocol p {
+	margin-top: 20px;
+	color: #fff;
+	font-size: 10px
+}
+
+/* Footer end */
+
+/* Responsive */
+@media(min-width:200px) and (max-width:575px) {
+	#footer {
+		height: 100%
+	}
+
+}
+
+@media(min-width:768px) and (max-width:991px) {
+	#footer .footerLogocol li {
+		margin-right: 8px;
+		padding: 5px;
+		width: 25px;
+		height: 25px;
+		line-height: 0;
+	}
+
+	#footer .address p {
+		font-size: 14px;
+	}
+
+}
