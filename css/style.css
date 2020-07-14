@@ -11,10 +11,12 @@ body {
 	box-sizing: border-box;
 	color: #000;
 	font-family: 'comfortaa';
-overflow :hidden;
+overflow :hidden; scrollbar-width: none;
 
 }
-
+::-webkit-scrollbar {
+  display: none;
+}
 * {
 	outline: none !important;
 }
